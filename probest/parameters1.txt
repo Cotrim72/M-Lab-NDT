@@ -1,0 +1,44 @@
+--- Modelo 1: Throughput (Gama) ---
+Usando 7082 pontos positivos para o ajuste Gama.
+
+Parâmetros MLE (Gama) para 'download_throughput_bps' (apenas > 0):
+  Shape (a): 1.4957
+  Scale (b): 338743535.5581
+Salvo: throughput_gamma_hist.png
+Salvo: throughput_gamma_qq.png
+
+--- Modelo 1: Throughput (Gama) ---
+Usando 7085 pontos positivos para o ajuste Gama.
+
+Parâmetros MLE (Gama) para 'upload_throughput_bps' (apenas > 0):
+  Shape (a): 1.1944
+  Scale (b): 316707418.9061
+Salvo: throughput_gamma_hist1.png
+Salvo: throughput_gamma_qq1.png
+
+--- Modelo 2: RTT (Normal) ---
+Dados de RTT: 7087 pontos no total.
+
+Parâmetros MLE (Normal) para 'rtt_download_sec':
+  Média (mu): 0.0484
+  Desvio Padrão (sigma): 0.0679
+Salvo: rtt_normal_hist.png
+Salvo: rtt_normal_qq.png
+
+--- Modelo 2: RTT (Normal) ---
+Dados de RTT (upload): 7087 pontos no total.
+
+Parâmetros MLE (Normal) para 'rtt_upload_sec':
+  Média (mu): 0.0372
+  Desvio Padrão (sigma): 0.0635
+Salvo: rtt_normal_hist1.png
+Salvo: rtt_normal_qq1.png
+
+--- Modelo 3: Perda de Pacotes (Beta) ---
+Usando 5611 pontos (0 < perda < 1) para o ajuste Beta.
+
+Parâmetros MLE (Beta) para 'packet_loss_percent' (0 < perda < 1):
+  Shape1 (a): 0.3462
+  Shape2 (b): 14.1330
+Salvo: perda_beta_hist.png
+Salvo: perda_beta_qq.png
