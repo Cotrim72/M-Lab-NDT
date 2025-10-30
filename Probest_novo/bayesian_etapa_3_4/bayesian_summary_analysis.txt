@@ -1,16 +1,4 @@
-============================================================
-      Análise Bayesiana (Etapas 3 e 4) - Modelo Corrigido
-============================================================
-
-Metodologia (Conforme Roteiro e Solicitação):
-1. Split dos Dados: 70% Treino, 30% Teste.
-2. Parâmetros Fixos: Parâmetros de nuisance (shape 'k' da Gamma, variância 'sigma^2' da Normal)
-   foram calculados via MLE usando *TODOS* os dados da entidade e fixados.
-3. Modelos (Likelihood + Prior -> Posterior):
-   - RTT (Normal): Likelihood=Normal(mu, sigma2_mle_fixa), Prior(mu)=Normal(nao_inf) -> Posterior(mu)=Normal
-   - Throughput (Gamma): Likelihood=Gamma(k_mle_fixo, lambda), Prior(lambda)=Gamma(nao_inf) -> Posterior(lambda)=Gamma
-   - Packet Loss (Binomial): Likelihood=Binom(N, p), Prior(p)=Beta(uniforme) -> Posterior(p)=Beta
-
+Análise Bayesiana (Etapas 3 e 4)
 
 ============================================================
       Resultados para: CLIENT CLIENT13
@@ -19,7 +7,7 @@ Metodologia (Conforme Roteiro e Solicitação):
 Total de Amostras: 644 (Treino: 450, Teste: 194)
 
 
---- Variável: download_throughput_bps (Modelo: Throughput (Gamma-Gamma)) ---
+ Variável: download_throughput_bps (Modelo: Throughput (Gamma-Gamma)) 
   Parâmetros Fixos (via MLE de *todos* dados): k_mle (fixo): 348.78168170
   Parâmetros da Posterior (calculado): a_n: 156951.757765, b_n: 2.674640e+11
 
@@ -35,7 +23,7 @@ Total de Amostras: 644 (Treino: 450, Teste: 194)
     Variância Preditiva (Bayes):     Var[y_novo|y] = 1.015136e+15
     Variância dos Dados de Teste:    Var[y_teste] =  1.114299e+15
 
---- Variável: upload_throughput_bps (Modelo: Throughput (Gamma-Gamma)) ---
+ Variável: upload_throughput_bps (Modelo: Throughput (Gamma-Gamma)) 
   Parâmetros Fixos (via MLE de *todos* dados): k_mle (fixo): 173.13474870
   Parâmetros da Posterior (calculado): a_n: 77910.637914, b_n: 1.325853e+11
 
@@ -51,7 +39,7 @@ Total de Amostras: 644 (Treino: 450, Teste: 194)
     Variância Preditiva (Bayes):     Var[y_novo|y] = 5.025301e+14
     Variância dos Dados de Teste:    Var[y_teste] =  3.636603e+14
 
---- Variável: rtt_download_sec (Modelo: RTT (Normal-Normal)) ---
+ Variável: rtt_download_sec (Modelo: RTT (Normal-Normal)) 
   Parâmetros Fixos (via MLE de *todos* dados): sigma2_mle (fixa): 3.19420338e-05
   Parâmetros da Posterior (calculado): mu_n: 0.0116466444, sigma2_n: 7.09822973e-08
 
@@ -67,7 +55,7 @@ Total de Amostras: 644 (Treino: 450, Teste: 194)
     Variância Preditiva (Bayes):     Var[y_novo|y] = 3.20130161e-05
     Variância dos Dados de Teste:    Var[y_teste] =  6.35112947e-05
 
---- Variável: rtt_upload_sec (Modelo: RTT (Normal-Normal)) ---
+ Variável: rtt_upload_sec (Modelo: RTT (Normal-Normal)) 
   Parâmetros Fixos (via MLE de *todos* dados): sigma2_mle (fixa): 2.49094264e-05
   Parâmetros da Posterior (calculado): mu_n: 0.0131391156, sigma2_n: 5.53542810e-08
 
@@ -83,7 +71,7 @@ Total de Amostras: 644 (Treino: 450, Teste: 194)
     Variância Preditiva (Bayes):     Var[y_novo|y] = 2.49647807e-05
     Variância dos Dados de Teste:    Var[y_teste] =  8.12383160e-06
 
---- Variável: packet_loss_count_n1000 (Modelo: Packet Loss (Beta-Binomial)) ---
+ Variável: packet_loss_count_n1000 (Modelo: Packet Loss (Beta-Binomial)) 
   Parâmetros Fixos (via MLE de *todos* dados): N (fixo): 1000
   Parâmetros da Posterior (calculado): a_n: 24030.0000, b_n: 425972.0000
 
@@ -106,7 +94,7 @@ Total de Amostras: 644 (Treino: 450, Teste: 194)
 Total de Amostras: 536 (Treino: 375, Teste: 161)
 
 
---- Variável: download_throughput_bps (Modelo: Throughput (Gamma-Gamma)) ---
+ Variável: download_throughput_bps (Modelo: Throughput (Gamma-Gamma)) 
   Parâmetros Fixos (via MLE de *todos* dados): k_mle (fixo): 2.90619578
   Parâmetros da Posterior (calculado): a_n: 1089.824416, b_n: 2.416765e+11
 
@@ -122,7 +110,7 @@ Total de Amostras: 536 (Treino: 375, Teste: 161)
     Variância Preditiva (Bayes):     Var[y_novo|y] = 1.436927e+17
     Variância dos Dados de Teste:    Var[y_teste] =  7.383259e+16
 
---- Variável: upload_throughput_bps (Modelo: Throughput (Gamma-Gamma)) ---
+ Variável: upload_throughput_bps (Modelo: Throughput (Gamma-Gamma)) 
   Parâmetros Fixos (via MLE de *todos* dados): k_mle (fixo): 1.28916186
   Parâmetros da Posterior (calculado): a_n: 483.436697, b_n: 1.637373e+11
 
@@ -138,7 +126,7 @@ Total de Amostras: 536 (Treino: 375, Teste: 161)
     Variância Preditiva (Bayes):     Var[y_novo|y] = 1.492046e+17
     Variância dos Dados de Teste:    Var[y_teste] =  9.982612e+16
 
---- Variável: rtt_download_sec (Modelo: RTT (Normal-Normal)) ---
+ Variável: rtt_download_sec (Modelo: RTT (Normal-Normal)) 
   Parâmetros Fixos (via MLE de *todos* dados): sigma2_mle (fixa): 5.19824005e-06
   Parâmetros da Posterior (calculado): mu_n: 0.0112725307, sigma2_n: 1.38619735e-08
 
@@ -154,7 +142,7 @@ Total de Amostras: 536 (Treino: 375, Teste: 161)
     Variância Preditiva (Bayes):     Var[y_novo|y] = 5.21210202e-06
     Variância dos Dados de Teste:    Var[y_teste] =  5.10640125e-06
 
---- Variável: rtt_upload_sec (Modelo: RTT (Normal-Normal)) ---
+ Variável: rtt_upload_sec (Modelo: RTT (Normal-Normal)) 
   Parâmetros Fixos (via MLE de *todos* dados): sigma2_mle (fixa): 1.61278358e-05
   Parâmetros da Posterior (calculado): mu_n: 0.0125920080, sigma2_n: 4.30075622e-08
 
@@ -170,7 +158,7 @@ Total de Amostras: 536 (Treino: 375, Teste: 161)
     Variância Preditiva (Bayes):     Var[y_novo|y] = 1.61708434e-05
     Variância dos Dados de Teste:    Var[y_teste] =  1.55518967e-05
 
---- Variável: packet_loss_count_n1000 (Modelo: Packet Loss (Beta-Binomial)) ---
+ Variável: packet_loss_count_n1000 (Modelo: Packet Loss (Beta-Binomial)) 
   Parâmetros Fixos (via MLE de *todos* dados): N (fixo): 1000
   Parâmetros da Posterior (calculado): a_n: 8743.0000, b_n: 366259.0000
 
