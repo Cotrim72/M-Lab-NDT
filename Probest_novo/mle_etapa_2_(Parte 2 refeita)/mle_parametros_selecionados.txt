@@ -1,0 +1,34 @@
+Resultados da Análise de Máxima Verossimilhança (MLE)
+Modelos: Gamma (Throughput), Normal (RTT), Binomial(n=1000) (Packet Loss)
+
+==============================
+ Entidade: client client11
+==============================
+Download Throughput (Gamma) (download_throughput_bps):
+  shape (a): 2.0688, loc: 0.0000, scale (b): 243921233.3130
+Upload Throughput (Gamma) (upload_throughput_bps):
+  shape (a): 1.6048, loc: 0.0000, scale (b): 166622310.1973
+RTT Download (Normal) (rtt_download_sec):
+  mean (mu): 0.0129, std (sigma): 0.0062
+RTT Upload (Normal) (rtt_upload_sec):
+  mean (mu): 0.0152, std (sigma): 0.0091
+Packet Loss (Binomial n=1000) (packet_loss_count_n1000):
+  n (fixo): 1000
+  p_mle: 0.01198978
+  (Média obs. k: 11.9898)
+
+==============================
+ Entidade: client client12
+==============================
+Download Throughput (Gamma) (download_throughput_bps):
+  shape (a): 1.4848, loc: 0.0000, scale (b): 313012352.6081
+Upload Throughput (Gamma) (upload_throughput_bps):
+  shape (a): 6.7581, loc: 0.0000, scale (b): 13638616.9041
+RTT Download (Normal) (rtt_download_sec):
+  mean (mu): 0.0865, std (sigma): 0.1038
+RTT Upload (Normal) (rtt_upload_sec):
+  mean (mu): 0.0735, std (sigma): 0.0972
+Packet Loss (Binomial n=1000) (packet_loss_count_n1000):
+  n (fixo): 1000
+  p_mle: 0.00061250
+  (Média obs. k: 0.6125)
