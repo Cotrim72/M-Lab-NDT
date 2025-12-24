@@ -14,7 +14,7 @@ def realizar_teste_hipotese():
     # Filtragem de valores válidos (estritamente positivos para throughput e RTT)
     df = df[(df["download_throughput_bps"] > 0) & (df["rtt_download_sec"] > 0)]
 
-    # Definição dos clientes para comparação
+    # Definição dos grupos para comparação
     c1_id, c2_id = "client13", "server01"
 
     data_1 = df[df["client"] == c1_id]
@@ -103,3 +103,4 @@ def realizar_teste_hipotese():
 
 if __name__ == "__main__":
     realizar_teste_hipotese()
+
