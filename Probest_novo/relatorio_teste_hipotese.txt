@@ -1,0 +1,46 @@
+RELATÓRIO DE TESTE DE HIPÓTESE COMPLETO (UPLOAD/DOWNLOAD)
+============================================================
+Comparação: client13 vs server01
+Amostras: n1=644, n2=536
+Valor crítico (Chi-Square): 3.841
+
+--- TESTE: DOWNLOAD THROUGHPUT (GAMA) ---
+H0: Médias Iguais | H1: Médias Diferentes
+Média client13: 593.93 Mbps
+Média server01: 642.23 Mbps
+Parâmetro k: 6.105486
+Estatística W_obs: 10.9391
+P-Valor: 9.4158e-04
+Decisão: REJEITAR H0
+Conclusão: Diferença significativa
+
+--- TESTE: UPLOAD THROUGHPUT (GAMA) ---
+H0: Médias Iguais | H1: Médias Diferentes
+Média client13: 294.76 Mbps
+Média server01: 437.09 Mbps
+Parâmetro k: 2.439266
+Estatística W_obs: 111.3721
+P-Valor: 0.0000e+00
+Decisão: REJEITAR H0
+Conclusão: Diferença significativa
+
+--- TESTE: DOWNLOAD RTT (NORMAL) ---
+H0: Médias Iguais | H1: Médias Diferentes
+Média client13: 11.75 ms
+Média server01: 11.29 ms
+Variância sigma^2: 0.000020
+Estatística W_obs: 3.0329
+P-Valor: 8.1590e-02
+Decisão: NÃO REJEITAR H0
+Conclusão: Sem diferença significativa
+
+--- TESTE: UPLOAD RTT (NORMAL) ---
+H0: Médias Iguais | H1: Médias Diferentes
+Média client13: 12.99 ms
+Média server01: 12.64 ms
+Variância sigma^2: 0.000021
+Estatística W_obs: 1.7170
+P-Valor: 1.9008e-01
+Decisão: NÃO REJEITAR H0
+Conclusão: Sem diferença significativa
+
